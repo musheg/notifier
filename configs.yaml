@@ -1,0 +1,64 @@
+Company:
+  notify_on: self
+  is_new: true
+  is_deleted: true
+  changed_attrs:
+  - is_deleted
+  - is_blacklisted
+  changed_attrs_with_current_value:
+    crawling_status:
+      - 13
+      - 10
+Event:
+  notify_on: self
+  is_new: true
+  is_deleted: true
+  changed_attrs:
+  - is_deleted
+  - is_blacklisted
+  changed_attrs_with_current_value:
+    crawling_status:
+      - 13
+      - 10
+Webinar:
+  notify_on: self
+  is_new: true
+  is_deleted: true
+  changed_attrs:
+  - is_deleted
+  - is_blacklisted
+  changed_attrs_with_current_value:
+    crawling_status:
+      - 13
+      - 10
+ContentItem:
+  notify_on: Company
+  is_new: true
+  is_deleted: true
+  changed_attrs:
+  - is_deleted
+  - is_blacklisted
+  changed_attrs_with_current_value:
+    crawling_status:
+      - 13
+      - 10
+CompanyForEvent:
+  notify_on: Event
+  is_new: true
+  is_deleted: true
+  changed_attrs:
+  - is_deleted
+  - is_blacklisted
+CompanyCompetitor:
+  notify_on: Company
+  is_new: true
+  is_deleted: true
+  changed_attrs:
+  - is_deleted
+CompanyForWebinar:
+  notify_on: Webinar
+  is_new: true
+  is_deleted: true
+  changed_attrs:
+  - is_deleted
+  - is_blacklisted
